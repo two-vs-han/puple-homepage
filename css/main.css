@@ -1,0 +1,58 @@
+.main {
+  height: 628.52px;
+}
+html,
+.poster-slide {
+  position: relative;
+  height: 100%;
+}
+.poster-slide {
+  top: 100px;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.poster-slide .swiper-container {
+  width: 1420px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: calc(1400px/-2);
+}
+.main,
+.poster-slide .swiper-container {
+  background-color:#fffcff;
+}
+.poster-slide .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: calc(360px*300/255);
+  border-radius: 17px;
+  overflow: hidden;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+  opacity: .7;
+}
+.poster-slide .swiper-slide-active {
+  opacity: 1;
+}
+
+.poster-slide .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.poster-slide .swiper-pagination .swiper-pagination-bullet {
+  background-color: rgb(90, 16,109);
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  outline: none;
+}
+.poster-slide .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+  /* 마지막 bullet에는 오른쪽 여백이 필요 없기 때문에 지워줌. */
+}
