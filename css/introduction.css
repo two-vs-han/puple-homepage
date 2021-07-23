@@ -28,28 +28,47 @@
   height: 300px;
   position: absolute;
 }
-.main .menu ul.tabs li {
+.main .menu ul.tabs .tab-link {
+  display: flex;
+  align-items: center;
+  padding: auto;
+  width: 200px;
+  height: 45px;
+  color: #333;
+  font-size: 13px;
+  border-bottom: 0.1px solid #ccc;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.main .menu ul.tabs li:hover {
+  background-color: rgb(90, 16,109);
+  color: #fff;
+  font-weight: 700;
+}
+.main .menu ul.tabs li.current {
+  background-color: rgb(90, 16,109);
+  color: #fff;
+  font-weight: 700;
+}
+.main .menu .container {
+  position: relative;
+  display: block;
+}
+.main .menu .container .etc {
+  position: absolute;
   display: flex;
   align-items: center;
   padding: auto;
   width: 200px;
   height: 45px;
   font-size: 13px;
-  border-bottom: 0.1px solid #ccc;
   box-sizing: border-box;
   padding-left: 20px;
+  margin-top: 180px;
 }
-.main .menu ul.tabs li:last-child { 
-  border-bottom: none;
-}
-.main .menu ul.tabs li:hover {
+.main .menu .container .etc:hover {
   background-color: rgb(90, 16,109);
-  color: white;
-  font-weight: 700;
-}
-.main .menu ul.tabs li.current {
-  background-color: rgb(90, 16,109);
-  color: white;
+  color: #fff;
   font-weight: 700;
 }
 .main .tab-content {
@@ -66,6 +85,7 @@
   max-height: 440px;
   overflow: auto;
   line-height: 1.4;
+  color: #222;
   font-size: 13px;
   padding: 35px;
   box-sizing: border-box;

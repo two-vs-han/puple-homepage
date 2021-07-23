@@ -11,3 +11,10 @@ $(document).ready(function(){
 	})
 
 });
+
+const passEl = document.querySelector('.pass');
+const etcEl = document.querySelector('.etc');
+
+etcEl.addEventListener('click', function () {
+	passEl.click();
+});
