@@ -1,0 +1,72 @@
+.main{
+  margin-top: 100px;
+  height: 500px; 
+}
+.main .menu {
+  width: 200px;
+  position: relative;
+}
+.main > .inner {
+  position: relative;
+}
+.main .menu .up {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  box-sizing: border-box;
+}
+.main .menu .up h2 {
+  position: absolute;
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 15px;
+}
+.main .menu ul.tabs {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+}
+.main .menu ul.tabs li {
+  display: flex;
+  align-items: center;
+  padding: auto;
+  width: 200px;
+  height: 45px;
+  font-size: 13px;
+  border-bottom: 0.1px solid #ccc;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.main .menu ul.tabs li:last-child { 
+  border-bottom: none;
+}
+.main .menu ul.tabs li:hover {
+  background-color: rgb(90, 16,109);
+  color: white;
+  font-weight: 700;
+}
+.main .menu ul.tabs li.current {
+  background-color: rgb(90, 16,109);
+  color: white;
+  font-weight: 700;
+}
+.main .tab-content {
+  display: none;
+}
+.main .tab-content.current {
+  display: inherit;
+  background-color: #fffaff;
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  max-height: 440px;
+  overflow: auto;
+  line-height: 1.4;
+  font-size: 13px;
+  padding: 35px;
+  box-sizing: border-box;
+}
