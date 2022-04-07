@@ -1,0 +1,42 @@
+.main {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  height: 500px;
+}
+
+.main .menu .container {
+  padding-top: 20px;
+  margin-left: 150px;
+}
+
+.main .menu .container .tab-link {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 800px;
+  background-color: #e8e9f1;
+  border-bottom: 3px solid #ffffff;
+  cursor: pointer;
+}
+
+.main .menu .container .tab-link.current {
+
+}
+
+.main .menu .container .tab-content {
+  width: 800px;
+  background-color: rgb(249,249,252);
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.main .menu .container .tab-content.current {
+  height: 80px;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  box-sizing: border-box;
+}

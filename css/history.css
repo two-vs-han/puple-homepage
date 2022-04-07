@@ -1,0 +1,114 @@
+.main {
+  margin-top: 100px;
+  height: auto;
+  padding-bottom: 20px;
+}
+.main .menu .container {
+  height: auto;
+}
+.main .menu ul.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main .menu ul.tabs li img {
+  width: calc(940px/4);
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.main .menu ul.tabs li img:hover {
+  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+.main .menu ul.tabs li.current img {
+  box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+}
+.main .tab-content {
+  background-color: #fdf2fd;
+  padding-left: 35px;
+  font-size: 13px;
+  height: 0;
+  overflow: hidden;
+}
+.main .tab-content.current {
+  display: flex;
+  background-color: #fdf2fd;
+  width: 100%;
+  height: auto;
+  /* position: absolute; */
+  top: 30px;
+  right: 0;
+  max-height: 440px;
+  overflow: auto;
+  line-height: 1.4;
+  color: #222;
+  font-size: 13px;
+  padding: 35px;
+  box-sizing: border-box;
+}
+.main .tab-content .text {
+  width: 70%;
+  flex-shrink: 0;
+}
+
+.main .tab-content h1 {
+  font-size: 20px;    
+}
+
+.main .tab-content h2 {
+  font-size: 32px;
+}
+
+.main .tab-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+.main .tab-content .btns {
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding-left: 70px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+.main .tab-content .btns .btn__story {
+  border: 2px #333 solid;
+  color: #333;
+  font-weight: 700;
+  border-radius: 8px;
+  width: 200px;
+  height: 70px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+  transition: background-color 0.2s;
+}
+.main .tab-content .btns .btn__story:hover {
+  background-color: #333;
+  color: #ffefff;
+}
+.main .tab-content .btns .btn__solution {
+  border: 2px #333 solid;
+  color: #333;
+  font-weight: 700;
+  border-radius: 8px;
+  width: 200px;
+  height: 70px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 25px;
+  transition: background-color 0.2s;
+}
+.main .tab-content .btns .btn__solution:hover {
+  background-color: #333;
+  color: #ffefff;
+}
